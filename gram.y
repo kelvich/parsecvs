@@ -72,6 +72,7 @@ header		: HEAD opt_number SEMI
 		  { this_file->head = $2; }
 		| BRANCH NUMBER SEMI
 		  { this_file->branch = $2; }
+		| BRANCH SEMI
 		| ACCESS SEMI
 		| symbollist
 		  { this_file->symbols = $1; }
